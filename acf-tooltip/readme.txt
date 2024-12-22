@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XMLKD
 Tags: acf, acfpro, advanced custom fields, instructions, tooltip
 Requires at least: 4.7
 Tested up to: 6.1.1
-Stable tag: 1.2.2
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -137,6 +137,9 @@ add_filter('acf/tooltip/fieldeditor', '__return_true');
 
 
 == Changelog ==
+
+= v1.2.5 =
+* Fixed PHP8 compatibilty
 
 = v1.2.2 =
 * Fixed compatibilty error of 1.2.1 update if ACF is < 5.7.0

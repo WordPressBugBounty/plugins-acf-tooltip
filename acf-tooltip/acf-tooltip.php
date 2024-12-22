@@ -3,7 +3,7 @@
 Plugin Name: ACF Tooltip
 Plugin URI: https://wordpress.org/plugins/acf-tooltip/
 Description: Displays ACF field descriptions as tooltips.
-Version: 1.2.2
+Version: 1.2.5
 Author: Thomas Meyer
 Author URI: https://dreihochzwo.de
 Text Domain: acf_tooltip
@@ -20,6 +20,8 @@ if( !class_exists('dhz_acf_plugin_tooltip') ) :
 
 class dhz_acf_plugin_tooltip {
 
+	public $settings;
+
 	function __construct() {
 
 		if ( ! defined( 'DHZ_SHOW_DONATION_LINK' ) )
@@ -30,7 +32,7 @@ class dhz_acf_plugin_tooltip {
 			'plugin'			=> 'ACF Tooltip',
 			'this_acf_version'	=> 0,
 			'min_acf_version'	=> '5.5.0',
-			'version'			=> '1.2.2',
+			'version'			=> '1.2.5',
 			'url'				=> plugin_dir_url( __FILE__ ),
 			'path'				=> plugin_dir_path( __FILE__ ),
 			'plugin_path'		=> 'https://wordpress.org/plugins/acf-tooltip/'
